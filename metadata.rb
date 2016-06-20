@@ -1,0 +1,7 @@
+name             'stanchion'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures stanchion'
+long_description 'Installs/Configures stanchion'
+version          '0.1.0'
