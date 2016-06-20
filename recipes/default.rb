@@ -9,7 +9,7 @@
 bash "install_stanchion_from_packagecloud" do
   code <<-EOH
   curl -s https://packagecloud.io/install/repositories/basho/stanchion/script.rpm.sh | bash
-  yum install stanchion-#{node['stanchion']['major_number']}.#{node['stanchion']['minor_number']}.#{node['stanchion']['incremental']}-#{node['stanchion']['build']}.el7.centos.x86_64
+  yum install stanchion-#{node['stanchion']['major_number']}.#{node['stanchion']['minor_number']}.#{node['stanchion']['incremental']}-#{node['stanchion']['build']}.el7.centos.x86_64 -y
   EOH
   not_if "which stanchion"
 end
